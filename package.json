@@ -1,0 +1,32 @@
+{
+  "name": "super_app_backend",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "pnpm nodemon",
+    "build": "rm -rf ./build && npx tsc",
+    "start": "pnpm run build && node build/index",
+    "lint": "pnpm eslint ./src",
+    "format": "pnpm eslint ./src --fix"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/eslint": "^8.56.10",
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.4.0",
+    "@types/eslint__js": "^8.42.3",
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.13.0",
+    "@typescript-eslint/eslint-plugin": "^7.11.0",
+    "eslint": "^9.4.0",
+    "nodemon": "^3.1.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5",
+    "typescript-eslint": "^7.12.0"
+  }
+}
